@@ -13,7 +13,6 @@ public class Main {
     System.out.println("Task " + task.getState());
     task.start();
     if (args.length > 0 && args[0].equals("abort")) {
-      if (args.length > 0 && args[0].equals("abort")) {
         new Thread(()->{
           try{
             Thread.sleep(1000);
@@ -22,7 +21,6 @@ public class Main {
           }
           task.abort();
         }).start();
-      }
     /*<- tu zapisać kod  przerywający działanie tasku po sekundzie
          i uruchomić go w odrębnym wątku
     */
